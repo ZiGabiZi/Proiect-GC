@@ -17,6 +17,8 @@ The project demonstrates:
 - **🪐 Mercury, Venus, Mars**  
 
 Each body is **scaled, positioned, and colored** to closely match real-world proportions.
+![Image](https://github.com/user-attachments/assets/da89b20f-9cf3-4d6c-b0b6-b1424ec04289)
+![Image](https://github.com/user-attachments/assets/22b91959-044e-46f1-a9dc-bd92ea1ef633)
 
 ---
 
@@ -92,6 +94,7 @@ Additionally, texture mapping is also applied when codCol = 2.
 ### Shadow implementation
 Shadows were applied using a light source close to the Sun and utilizing the shadow matrix.
 The shadows are rendered in the shaders using codCol = 1 and the function drawShadow().
+![Image](https://github.com/user-attachments/assets/f1134096-1bcd-4660-9ad3-ed1509d77968)
 
 ### Object Texturing
 Since the Sun is represented as a light source, it is only illuminated using ambient light.
