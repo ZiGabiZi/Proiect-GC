@@ -4,11 +4,11 @@
 This project is a **3D graphical simulation of the Solar System**, created using **OpenGL**, **GLSL shaders**, and **GLM** for matrix transformations. It aims to accurately represent celestial bodies with proper scaling, lighting, and texture mapping.
 
 The project demonstrates:
-- ✅ **3D object rendering** using sphere-based geometry  
-- ✅ **Lighting models (ambient, diffuse, specular)**
-- ✅ **Shadow mapping for realistic effects**
-- ✅ **Texture mapping using OpenGL**
-- ✅ **Real-time camera controls for navigation**
+-  **3D object rendering** using sphere-based geometry  
+-  **Lighting models (ambient, diffuse, specular)**
+-  **Shadow mapping for realistic effects**
+-  **Texture mapping using OpenGL**
+-  **Real-time camera controls for navigation**
 
 ### 🪐 Celestial Bodies Included:
 - **☀ Sun**
@@ -30,10 +30,10 @@ Each body is **scaled, positioned, and colored** to closely match real-world pro
 
 ---
 
-## 🎨 Object Rendering
+## Object Rendering
 For drawing the celestial bodies, I used the same sphere, applying different scalings to modify the size and translations to adjust the position.
 The coordinates of the vertices that make up the sphere were calculated using the following formula:
-### 📐 Sphere Vertex Calculation Formula:
+### Sphere Vertex Calculation Formula:
 ```cpp
 float u = U_MIN + parr * step_u;
 float v = V_MIN + merid * step_v;
@@ -117,5 +117,20 @@ SOIL_free_image_data(image);
 glBindTexture(GL_TEXTURE_2D, 0);
 }
 ```
+### How to Use the Simulation
+Once the project is running, users may want to **interact** with it.  
+
+## 🎮 User Controls:
+| Key         | Action                  |
+|------------|--------------------------|
+| `l`        | Rotate camera left        |
+| `r`        | Rotate camera right       |
+| `+`        | Zoom in                   |
+| `-`        | Zoom out                  |
+| ⬅️ `Arrow Left`  | Move left               |
+| ➡️ `Arrow Right` | Move right              |
+| ⬆️ `Arrow Up`  | Move forward             |
+| ⬇️ `Arrow Down` | Move backward           |
+| ⏹ `ESC`      | Exit the program          |
 
 
